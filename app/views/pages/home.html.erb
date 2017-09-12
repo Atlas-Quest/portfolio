@@ -5,8 +5,8 @@
       <div class="hero-content">
         <h1>Hello, my name is Ness. I am a Designer / Front-End Developer living in Adelaide, Australia.</h1>
           <div class="learn">Learn more about what I do <br>
-            <i id="scrollDown"class="fa fa-angle-down" aria-hidden="true"></i>
           </div>
+          <i id="scrollDown"class="fa fa-angle-down" aria-hidden="true"></i>
         </div>
     </div>
   </div>
@@ -37,7 +37,8 @@
   <!-- Start Personal Projects Section Here -->
   <div id="personal-projects">
     <p>Personal Projects</p>
-    <i class="fa fa-coffee" aria-hidden="true"></i>
+    <i class="fa fa-coffee" aria-hidden="true"></i> <br>
+    <a href="https://atlas-quest.github.io/projects/">Peppa Pig Snorts and Crosses</a>
   </div>
   <section id="sub-footer">
     <p>Want to work together?</p>
@@ -45,9 +46,9 @@
   <footer class="footer">
     <a href="https://github.com/Atlas-Quest"><i class="fa fa-github" aria-hidden="true"></a></i>
     <a href="https://www.linkedin.com/in/vanessadohnt/"><i class="fa fa-linkedin" aria-hidden="true"></a></i>
-    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></a></i>
+    <a href="https://twitter.com/atlas_quest"><i class="fa fa-twitter" aria-hidden="true"></a></i>
     <a href="https://www.instagram.com/codesprite.tech/"><i class="fa fa-instagram" aria-hidden="true"></a></i>
-    <p id="copyright">Made With &hearts; 2017</p>
+    <p id="copyright">Made With &hearts; By Me 2017</p>
   </footer>
 </div>
 <script>
@@ -55,7 +56,7 @@
   $('#scrollDown').click(function(event){
     event.preventDefault();
     // var scrollDown = $(document).height();
-    $('html, body').animate({ scrollTop: $('.intro').offset().top }, 700);
+    $('html, body').animate({ scrollTop: $('#me').offset().top }, 400);
   });
 
 </script>
