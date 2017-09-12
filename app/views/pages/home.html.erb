@@ -4,8 +4,8 @@
     <div class="hero-container">
       <div class="hero-content">
         <h1>Hello, my name is Ness. I am a Designer / Front-End Developer living in Melbourne, Australia.</h1>
-          <div class="learn-more">Learn more about what I do <br>
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <div class="learn">Learn more about what I do <br>
+            <i id="scrollDown"class="fa fa-angle-down" aria-hidden="true"></i>
           </div>
         </div>
     </div>
@@ -15,7 +15,7 @@
     <div class="container">
       <div class="row">
         <div class="eight.columns.offset-by-two">
-          <p class="intro.slate">My Expertise</p>
+          <p class="intro">My Expertise</p>
           <i class="fa fa-diamond" aria-hidden="true"></i>
           <p class="statement">I'm passionate about all phases of the design process.</p>
         </div>
@@ -51,3 +51,12 @@
     <p id="copyright">codesprite&copy; 2017</p>
   </footer>
 </div>
+<script>
+
+  $('#scrollDown').click(function(event){
+    event.preventDefault();
+    // var scrollDown = $(document).height();
+    $('html, body').animate({ scrollTop: $('.intro').offset().top }, 700);
+  });
+
+</script>
