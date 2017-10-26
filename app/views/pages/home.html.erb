@@ -13,11 +13,16 @@
   <!-- Start Expertise Section Here -->
   <section id="me">
     <div class="container">
-      <div class="row">
-        <div class="eight.columns.offset-by-two">
+      <div>
+        <div>
           <p class="intro">My Expertise</p>
           <i class="fa fa-diamond" aria-hidden="true"></i>
           <p class="statement">I'm passionate about all phases of the design process.</p>
+          <ul>
+            <li><h4>UX/UI</h4> </li>
+            <li><h4>Code</h4> </li>
+            <li><h4>Ideas</h4> </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -29,7 +34,7 @@
         <div class="twelve.columns">
           <p class="intro.slate">Work</p>
             <i class="fa fa-briefcase" aria-hidden="true"></i>
-          <p class="statement">Want to see more examples? <a href="mailto:vanessa.dohnt@codesprite.com.au">Email me.</a></p>
+          <p class="statement">Want to see more examples? <a class="email" href="mailto:vanessa.e.dohnt@gmail.com">Email me.</a></p>
         </div>
       </div>
     </div>
@@ -38,7 +43,7 @@
   <div id="personal-projects">
     <p>Personal Projects</p>
     <i class="fa fa-coffee" aria-hidden="true"></i> <br>
-      <ul>
+      <ul class="projects">
         <li><a href="https://atlas-quest.github.io/projects/"><img class="project1" src="/assets/peppa_pig.jpg" alt=""></a></li>
         <li><a href="https://infinite-shore-22424.herokuapp.com/"><img class="project2" src="/assets/rollback_app.png" alt=""></a></li>
       </ul>
@@ -57,21 +62,10 @@
 </div>
 <script>
 
-  $('#scrollDown').click(function(){
-    $(function(){
-      $('.home-hero').blur(function () {
-        console.log('hello jquery');
-      });
-    });
-  })
-
-
   $('#scrollDown').click(function(event){
     event.preventDefault();
     // var scrollDown = $(document).height();
     $('html, body').animate({ scrollTop: $('#me').offset().top }, 600);
   });
-
-
 
 </script>
