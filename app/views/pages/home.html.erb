@@ -3,10 +3,10 @@
   <div id="fullscreen-hero" class="home-hero">
     <div class="hero-container">
       <div class="hero-content">
-        <h1>Hello, my name is Ness. I am a Designer / Front-End Developer living in Adelaide, Australia.</h1>
+        <h1>Hello, my name is Ness. I am a Designer / Web Developer living in Adelaide, Australia.</h1>
           <div class="learn">Learn more about what I do <br>
           </div>
-          <i id="scrollDown"class="fa fa-angle-down" aria-hidden="true"></i>
+          <i id="scrollDown" class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
         </div>
     </div>
   </div>
@@ -38,7 +38,11 @@
   <div id="personal-projects">
     <p>Personal Projects</p>
     <i class="fa fa-coffee" aria-hidden="true"></i> <br>
-    <a href="https://atlas-quest.github.io/projects/">Peppa Pig Snorts and Crosses</a>
+      <ul>
+        <li><a href="https://atlas-quest.github.io/projects/"><img class="project1" src="/assets/peppa_pig.jpg" alt=""></a></li>
+        <li><a href="https://infinite-shore-22424.herokuapp.com/"><img class="project2" src="/assets/rollback_app.png" alt=""></a></li>
+      </ul>
+
   </div>
   <section id="sub-footer">
     <p>Want to work together?</p>
@@ -53,10 +57,21 @@
 </div>
 <script>
 
+  $('#scrollDown').click(function(){
+    $(function(){
+      $('.home-hero').blur(function () {
+        console.log('hello jquery');
+      });
+    });
+  })
+
+
   $('#scrollDown').click(function(event){
     event.preventDefault();
     // var scrollDown = $(document).height();
-    $('html, body').animate({ scrollTop: $('#me').offset().top }, 400);
+    $('html, body').animate({ scrollTop: $('#me').offset().top }, 600);
   });
+
+
 
 </script>
