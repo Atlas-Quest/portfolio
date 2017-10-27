@@ -18,11 +18,9 @@
           <p class="intro">My Expertise</p>
           <i class="fa fa-diamond" aria-hidden="true"></i>
           <p class="statement">I'm passionate about all phases of the design process.</p>
-          <ul>
-            <li><h4>UX/UI</h4> </li>
-            <li><h4>Code</h4> </li>
-            <li><h4>Ideas</h4> </li>
-          </ul>
+          <div><h4>UX/Design</h4><p>some text here</p></div>
+          <div><h4>Code</h4><p>some text here</p></div>
+          <div><h4>Ideas</h4><p></p></div>
         </div>
       </div>
     </div>
@@ -47,7 +45,6 @@
         <li><a href="https://atlas-quest.github.io/projects/"><img class="project1" src="/assets/peppa_pig.jpg" alt=""></a></li>
         <li><a href="https://infinite-shore-22424.herokuapp.com/"><img class="project2" src="/assets/rollback_app.png" alt=""></a></li>
       </ul>
-
   </div>
   <section id="sub-footer">
     <p>Want to work together?</p>
@@ -62,10 +59,16 @@
 </div>
 <script>
 
+// this function blurs home_background then scrolls down to expertise section
   $('#scrollDown').click(function(event){
     event.preventDefault();
-    // var scrollDown = $(document).height();
-    $('html, body').animate({ scrollTop: $('#me').offset().top }, 600);
+    $('html, body').animate({ scrollTop: $('#me').offset().top }, 920);
+    $('#fullscreen-hero').css({
+      "opacity": "0.6",
+      "filter": "blur(4px)",
+      "-webkit-filter": "blur(4px)",
+      "-moz-filter": "blur(4px)"
+    });
   });
 
 </script>
