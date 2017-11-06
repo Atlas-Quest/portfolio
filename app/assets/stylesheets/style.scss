@@ -12,6 +12,36 @@
   text-align: center;
   min-height: 350px;
   background-size: cover;
+
+}
+
+.expertise {
+  justify-content: space-evenly;
+
+}
+
+.ux {
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+
+.ux:hover {
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+
+.code {
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+
+.ideas {
+  width: 200px;
+  height: 100px;
+  display: block;
 }
 
 .project1 {
@@ -118,7 +148,7 @@ footer {
 }
 
 .statement {
-  font-size: .90em;
+  font-size: .7em;
 }
 
 .footer i {
@@ -143,6 +173,14 @@ ul {
 li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+// testing distortion button
+
+.button {
+  /* other styles */
+  -webkit-filter: url("#filter");
+  filter: url("/#filter");
 }
 
 li:hover {

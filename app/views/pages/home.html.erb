@@ -15,22 +15,28 @@
     <div class="container">
       <div>
         <div>
-          <p class="intro">My Expertise</p>
+          <h4 class="intro">My Expertise</h4>
           <i class="fa fa-diamond" aria-hidden="true"></i>
-          <p class="statement">I'm passionate about all phases of the design process.</p>
+          <h3 class="statement">I'm passionate about all phases of the design process.</h3>
           <div>
-            <ul>
-              <li class="ux">
-                <h4>UX/UI</h4>
-                <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
+            <ul class="expertise">
+              <li>
+                <div class="ux">
+                  <h5>UX/UI</h5>
+                  <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
+                </div>
               </li>
-              <li class="code">
-                <h4>Code</h4>
-                <p>some text here</p>
+              <li>
+                <div class="code">
+                  <h5>Code</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
               </li>
-              <li class="ideas">
-                <h4>Ideas</h4>
-                <p></p>
+              <li>
+                <div>
+                  <h5>Ideas</h5>
+                  <p class="ideas">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -41,26 +47,31 @@
   <!-- Start Work Experience Section Here -->
   <div id="work">
     <div class="container">
-      <div class="row">
-        <div class="twelve.columns">
-          <p class="intro.slate">Work</p>
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-          <p class="statement">Want to see more examples? <a class="email" href="mailto:vanessa.e.dohnt@gmail.com">Email me.</a></p>
-        </div>
-      </div>
+      <h4 class="intro.slate">Work</h4>
+        <i class="fa fa-briefcase" aria-hidden="true"></i>
+      <p class="statement">Want to see more examples? <a class="email" href="mailto:vanessa.e.dohnt@gmail.com">Email me.</a></p>
     </div>
   </div>
   <!-- Start Personal Projects Section Here -->
   <div id="personal-projects">
-    <p>Personal Projects</p>
-    <i class="fa fa-coffee" aria-hidden="true"></i> <br>
+    <h4>Personal Projects</h4>
+      <i class="fa fa-coffee" aria-hidden="true">
+      </i><br>
       <ul class="projects">
-        <li><a href="https://atlas-quest.github.io/projects/"><img class="project1" src="/assets/peppa_pig.jpg" alt=""></a></li>
-        <li><a href="https://infinite-shore-22424.herokuapp.com/"><img class="project2" src="/assets/rollback_app.png" alt=""></a></li>
+        <li>
+          <a href="https://atlas-quest.github.io/projects/">
+          <img class="project1" src="/assets/peppa_pig.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://infinite-shore-22424.herokuapp.com/">
+          <img class="project2" src="/assets/rollback_app.png" alt="">
+          </a>
+        </li>
       </ul>
   </div>
   <section id="sub-footer">
-    <p>Want to work together?</p>
+    <h4>Want to work together?</h4>
   </section>
   <footer class="footer">
     <a href="https://github.com/Atlas-Quest"><i class="fa fa-github" aria-hidden="true"></a></i>
@@ -72,8 +83,20 @@
 </div>
 <script>
 
-// this function blurs home_background then scrolls down to expertise section
-  $('#scrollDown').click(function(event){
+// This function resets blur:
+
+var reset = function() {
+    $('#fullscreen-hero').css({
+    "opacity": "1",
+    "filter": "none",
+    "-webkit-filter": "none",
+    "-moz-filter": "none"
+  });
+};
+
+// this function blurs home_background then scrolls down to expertise section:
+
+var blur = $('#scrollDown').click(function(event){
     event.preventDefault();
     $('html, body').animate({ scrollTop: $('#me').offset().top }, 880);
     $('#fullscreen-hero').css({
@@ -81,7 +104,11 @@
       "filter": "blur(4px)",
       "-webkit-filter": "blur(4px)",
       "-moz-filter": "blur(4px)"
-    });
   });
+  setTimeout(reset, 1000);
+});
+
+// Calling reset() here:
+
 
 </script>
