@@ -6,7 +6,7 @@
 }
 
 #fullscreen-hero {
-  background-image: url("home_background.jpg");
+  background-image: image-url("home_background.jpg");
   height: 100vh;
   position: relative;
   text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .about {
-  background-image: url("about_background.jpg");
+  background-image: image-url("about_background.jpg");
   background-size: cover;
   height: 100vh;
 }
